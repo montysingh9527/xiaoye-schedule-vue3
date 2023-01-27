@@ -1,7 +1,17 @@
-# Vue 3 + Vite
+###升级NodeJs方法二
+```方法二是使用工具 nvmw 或者 nvm，window系统的使用 nvmw，苹果系统的使用 nvm(实际测试发现windows系统也可以安装nvm)，步骤如下：```
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+#### 安装 nvmw
+```npm install nvmw -g```
 
-## Recommended IDE Setup
+#### 使用nvmw安装nodejs
+```nvmw install v18.12.0```
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+#### 使用nvmw临时使用某个版本的nodejs
+```nvmw use v18.12.0```
+
+#### 使用nvmw切换本地的nodejs版本
+```nvmw switch v18.12.0```
+
+#### 查看本地安装的所有nodejs版本
+```nvmw ls```

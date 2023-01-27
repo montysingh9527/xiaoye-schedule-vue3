@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "begin_time": 1666524600,
+    "weekday": 3,
+    "course": "物理",
+    "teacher": "王老师"
+  },
+  {
+    "id": 2,
+    "begin_time": 1666503000,
+    "weekday": 1,
+    "course": "数学",
+    "teacher": "高老师"
+  },
+  {
+    "id": 3,
+    "begin_time": 1666486800,
+    "weekday": 1,
+    "course": "语文",
+    "teacher": "刘老师"
+  }
+]
