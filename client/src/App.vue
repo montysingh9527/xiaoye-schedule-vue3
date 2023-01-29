@@ -1,14 +1,8 @@
 <template>
-  <div>App</div>
+  <scheduleTable></scheduleTable>
 </template>
 <script setup>
-import { onMounted } from "vue";
-import axios from "axios";
-
-onMounted(async () => {
-  const res = await axios("http://localhost:3000/initial_data");
-  console.log(res);
-});
+import scheduleTable from "./components/scheduleTable/index.vue";
 </script>
 
 <style>
