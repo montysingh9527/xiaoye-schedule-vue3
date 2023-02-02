@@ -7,11 +7,13 @@
         <!-- 时间 -->
         <DurationTitle :title="item.title"></DurationTitle>
         <!-- 单元格 -->
-        <td
-          v-for="n in 7"
-          :key="n"
-          @click="handleTDClick(item.begin_time, n)"
-        ></td>
+        <td v-for="n in 7" :key="n" @click="handleTDClick(item.begin_time, n)">
+          <!-- 卡片信息 -->
+          <ScheduleCard
+            v-if="schedule[item.begin_time + '_' + n]"
+            :data="schedule[item.begin_time + '_' + n]"
+          ></ScheduleCard>
+        </td>
       </tr>
     </table>
   </div>
@@ -21,6 +23,7 @@
 import "./styles/index.scss";
 import WeekTitle from "./WeekTitle.vue";
 import DurationTitle from "./DurationTitle.vue";
+import ScheduleCard from "./ScheduleCard.vue";
 import { reactive, toRefs, onMounted } from "vue";
 import { getInitialData } from "./scripts/service";
 import { useInitialData } from "./scripts/hooks";
