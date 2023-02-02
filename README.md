@@ -34,5 +34,15 @@ Vue3课程表排课系统
             course,
             teacher
         }
+        // 策略模式：组装后数据   开始时间_星期
+        {
+            "1666486800_1":{
+                id,
+                begin_time,
+                weekday,
+                course,
+                teacher
+            }
+        }
 ```
 

@@ -1,9 +1,12 @@
 <template>
   <div class="schedule-table">
     <table border="1" cellpadding="0">
+      <!-- 星期 -->
       <WeekTitle></WeekTitle>
       <tr v-for="item of duration" :key="item.begin_time">
+        <!-- 时间 -->
         <DurationTitle :title="item.title"></DurationTitle>
+        <!-- 单元格 -->
         <td
           v-for="n in 7"
           :key="n"
